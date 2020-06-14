@@ -7,33 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
-//@interface AppDelegate ()
-//
-//@end
+@interface AppDelegate ()
 
-@implementation AppDelegate{
-    UIWindow* _window;
-}
+@end
+
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    _window = [[UIWindow alloc] init];
-    return YES;
-}
-
-- (void) startApp {
-    UIViewController *controller = [UIViewController init];
+    UIViewController *controller = [ViewController new];
     [[controller view] setBackgroundColor:UIColor.blueColor];
-    _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-}
-
-- (UIWindow *)window {
-    return _window;
-}
-
-- (void)setWindow:(UIWindow *)window {
-    _window = window;
+    self.window = [UIWindow new];
+    self.window.rootViewController = controller;
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 @end

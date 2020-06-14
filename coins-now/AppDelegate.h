@@ -10,8 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-- (void) setWindow:(UIWindow*)window;
-- (UIWindow *) window;
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 

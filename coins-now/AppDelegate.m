@@ -26,8 +26,6 @@
     UIViewController *controller = [UIViewController init];
     [[controller view] setBackgroundColor:UIColor.blueColor];
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    _window
-
 }
 
 - (UIWindow *)window {

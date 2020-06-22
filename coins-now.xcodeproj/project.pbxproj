@@ -12,6 +12,7 @@
 		855A424E2495205C00838EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855A424D2495205C00838EAD /* Assets.xcassets */; };
 		855A42512495205C00838EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A424F2495205C00838EAD /* LaunchScreen.storyboard */; };
 		855A42542495205C00838EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A42532495205C00838EAD /* main.m */; };
+		85CB612624A0396C00F14094 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB612524A0396C00F14094 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		855A42502495205C00838EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855A42522495205C00838EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855A42532495205C00838EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85CB612424A0396C00F14094 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		85CB612524A0396C00F14094 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,16 +59,34 @@
 		855A42402495205B00838EAD /* coins-now */ = {
 			isa = PBXGroup;
 			children = (
-				855A42412495205B00838EAD /* AppDelegate.h */,
-				855A42422495205B00838EAD /* AppDelegate.m */,
-				855A42472495205B00838EAD /* ViewController.h */,
-				855A42482495205B00838EAD /* ViewController.m */,
-				855A424D2495205C00838EAD /* Assets.xcassets */,
-				855A424F2495205C00838EAD /* LaunchScreen.storyboard */,
-				855A42522495205C00838EAD /* Info.plist */,
-				855A42532495205C00838EAD /* main.m */,
+				85CB611A24A0375200F14094 /* Sources */,
+				85CB611924A0373C00F14094 /* SupportingFiles */,
 			);
 			path = "coins-now";
+			sourceTree = "<group>";
+		};
+		85CB611924A0373C00F14094 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				855A42522495205C00838EAD /* Info.plist */,
+				855A42532495205C00838EAD /* main.m */,
+				855A424F2495205C00838EAD /* LaunchScreen.storyboard */,
+				855A424D2495205C00838EAD /* Assets.xcassets */,
+				855A42412495205B00838EAD /* AppDelegate.h */,
+				855A42422495205B00838EAD /* AppDelegate.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		85CB611A24A0375200F14094 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				855A42472495205B00838EAD /* ViewController.h */,
+				855A42482495205B00838EAD /* ViewController.m */,
+				85CB612424A0396C00F14094 /* MainViewController.h */,
+				85CB612524A0396C00F14094 /* MainViewController.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +161,7 @@
 				855A42492495205B00838EAD /* ViewController.m in Sources */,
 				855A42432495205B00838EAD /* AppDelegate.m in Sources */,
 				855A42542495205C00838EAD /* main.m in Sources */,
+				85CB612624A0396C00F14094 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				INFOPLIST_FILE = "coins-now/Info.plist";
+				INFOPLIST_FILE = "coins-now/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				INFOPLIST_FILE = "coins-now/Info.plist";
+				INFOPLIST_FILE = "coins-now/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

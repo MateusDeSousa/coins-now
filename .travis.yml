@@ -1,4 +1,0 @@
-os: osx
-osx_image: xcode11.5
-language: objective-c
-script: xcodebuild clean build -project coins-now.xcodeproj -scheme coins-now -destination "platform=iOS Simulator,OS=13.5,name=iPhone 11"

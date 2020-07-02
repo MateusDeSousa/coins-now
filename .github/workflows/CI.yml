@@ -1,0 +1,15 @@
+name: Workflow CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: build project
+      run: xcodebuild build -project coins-now.xcodeproj -scheme coins-now -destination "platform=iOS Simulator,OS=13.5,name=iPhone 11"

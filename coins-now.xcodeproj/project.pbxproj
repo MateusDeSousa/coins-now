@@ -13,6 +13,7 @@
 		855A42512495205C00838EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A424F2495205C00838EAD /* LaunchScreen.storyboard */; };
 		855A42542495205C00838EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A42532495205C00838EAD /* main.m */; };
 		85CB612624A0396C00F14094 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CB612524A0396C00F14094 /* MainViewController.m */; };
+		85ED734924AD6131007E1C2B /* UIColor+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED734824AD6131007E1C2B /* UIColor+Layout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		855A42532495205C00838EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85CB612424A0396C00F14094 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		85CB612524A0396C00F14094 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		85ED734724AD6131007E1C2B /* UIColor+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Layout.h"; sourceTree = "<group>"; };
+		85ED734824AD6131007E1C2B /* UIColor+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Layout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				85CB611A24A0375200F14094 /* Sources */,
+				85ED734224AD5E8B007E1C2B /* Network */,
+				85ED734324AD5EAD007E1C2B /* Extensions */,
 				85CB611924A0373C00F14094 /* SupportingFiles */,
 			);
 			path = "coins-now";
@@ -81,12 +86,36 @@
 		85CB611A24A0375200F14094 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				85ED734B24AD67C3007E1C2B /* Main */,
 				855A42472495205B00838EAD /* ViewController.h */,
 				855A42482495205B00838EAD /* ViewController.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		85ED734224AD5E8B007E1C2B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		85ED734324AD5EAD007E1C2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85ED734724AD6131007E1C2B /* UIColor+Layout.h */,
+				85ED734824AD6131007E1C2B /* UIColor+Layout.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		85ED734B24AD67C3007E1C2B /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				85CB612424A0396C00F14094 /* MainViewController.h */,
 				85CB612524A0396C00F14094 /* MainViewController.m */,
 			);
-			path = Sources;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +144,7 @@
 		855A42362495205B00838EAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mateus Sousa";
 				TargetAttributes = {
 					855A423D2495205B00838EAD = {
@@ -159,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				855A42492495205B00838EAD /* ViewController.m in Sources */,
+				85ED734924AD6131007E1C2B /* UIColor+Layout.m in Sources */,
 				855A42432495205B00838EAD /* AppDelegate.m in Sources */,
 				855A42542495205C00838EAD /* main.m in Sources */,
 				85CB612624A0396C00F14094 /* MainViewController.m in Sources */,
@@ -205,6 +235,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -263,6 +294,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

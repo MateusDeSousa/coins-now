@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "UIColor+Layout.h"
 
 @interface MainViewController ()
 @property (nonatomic, strong) UITableView* tableView;
@@ -24,12 +25,13 @@
 }
 
 - (void)setupTableView {
+    [self.tableView setBackgroundColor: UIColor.baseBackground];
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
 }
 
 - (void)styleContentView {
-    [self.view setBackgroundColor:UIColor.whiteColor];
+    [self.view setBackgroundColor:UIColor.baseBackground];
 }
 
 - (void) setupNavigation {

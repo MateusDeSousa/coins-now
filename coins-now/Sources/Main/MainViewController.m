@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "UIColor+Layout.h"
+#import "CoinsViewCell.h"
 
 @interface MainViewController ()
 @property (nonatomic, strong) UITableView* tableView;
@@ -19,15 +20,9 @@
     [super viewDidLoad];
     [self styleContentView];
     [self setupNavigation];
-    [self addComponents];
+    [self setupSubviews];
+    [self addSubviews];
     [self setupAnchors];
-    [self setupTableView];
-}
-
-- (void)setupTableView {
-    [self.tableView setBackgroundColor: UIColor.baseBackground];
-    [self.tableView setDelegate:self];
-    [self.tableView setDataSource:self];
 }
 
 - (void)styleContentView {
@@ -43,9 +38,16 @@
     self.title = @"Coins";
 }
 
-- (void)addComponents {
+- (void)setupSubviews {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
     [self.tableView setTranslatesAutoresizingMaskIntoConstraints:false];
+    [self.tableView registerClass:[CoinsViewCell class] forCellReuseIdentifier:@"CoinsViewCell"];
+    [self.tableView setBackgroundColor: UIColor.baseBackground];
+    [self.tableView setDelegate:self];
+    [self.tableView setDataSource:self];
+}
+
+- (void)addSubviews {
     [self.view addSubview:self.tableView];
 }
 
@@ -57,7 +59,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[UITableViewCell alloc] initWithFrame:CGRectZero];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CoinsViewCell" forIndexPath:indexPath];
+    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

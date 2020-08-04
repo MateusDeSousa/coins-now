@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: build project
-      run: xcodebuild build -project coins-now.xcodeproj -scheme coins-now -destination "platform=iOS Simulator,OS=13.5,name=iPhone 11"
+      run: xcodebuild build -project coins-now.xcodeproj -scheme coins-now -destination "platform=iOS Simulator,OS=13.6,name=iPhone 11"
